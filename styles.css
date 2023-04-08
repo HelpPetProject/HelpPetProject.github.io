@@ -1,201 +1,79 @@
+* {
+	box-sizing: border-box;
+}
+.body {
+	margin: 0;
+	background: #FFFFFF;
+}
 .registration-button { 
-	width:50%;
-	height:213px;
-	position:absolute;
-	left:25%;
-	top:2421px;
+	margin-top: 100px;
+	text-align:center;
+	margin-bottom: 100px;
 }
 .registration-button__rectangle { 
 	background-color:rgba(15.000000055879354, 169.00000512599945, 88.00000235438347, 1);
-	width:100%;
-	height:100%;
-	position:absolute;
-	left:0px;
-	top:0px;
-	border-top-left-radius:15px;
-	border-top-right-radius:15px;
-	border-bottom-left-radius:15px;
-	border-bottom-right-radius:15px;
+	border-radius:15px;
 	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.registration-button__text { 
-	color:rgba(255, 255, 255, 1);
-	width:100%;
-	height:100%;
-	top: 30%;
-	position:absolute;
+	color:rgb(255, 255, 255);
+	padding: 50px;
+	text-decoration: none;
 	font-weight:bold;
 	font-family:Jura;
-	text-align:center;
 	font-size:48px;
+	line-height: 1;
 	letter-spacing:0;
+	display: inline-block;
 }
-.application-features-comment { 
-	width:25%;
-	height:50%;
-	position:absolute;
-	left:75%;
-	top:1940px;
+.registration-button__rectangle:hover {
+	background-color:rgb(61, 210, 130);
 }
-.application-features-comment__image-position { 
-	width:35%;
-	height:100%;
-	position:absolute;
-	left:30%;
-	top:0px;
+.main {
+	display: block;
+	margin-top: 100px;
 }
-.application-features-comment__image { 
-	height:50%;
-	width:auto;
-	background-image:url(images/comment.png);
-	background-repeat:no-repeat;
-	background-size:contain;
+.application-features { 
+	display: flex;
+	justify-content: space-between;
 }
-.application-features-comment__text { 
+.application-features__box {
+	flex-basis: 20%;
+}
+.application-features__image { 
+	display: block;
+	margin-bottom: 10px;
+}
+.application-features__text { 
+	display: block;
 	color:rgba(15.000000055879354, 169.00000512599945, 88.00000235438347, 1);
-	width:80%;
-	height:auto;
-	position:absolute;
-	left:10%;
-	top:157px;
 	font-weight:bold;
 	font-family:Jura;
-	text-align:center;
-	font-size:32px;
-	letter-spacing:0;
-}
-.application-features-dairy { 
-	width:25%;
-	height:50%;
-	position:absolute;
-	left:50%;
-	top:1934px;
-}
-.application-features-dairy__text { 
-	color:rgba(15.000000055879354, 169.00000512599945, 88.00000235438347, 1);
-	width:80%;
-	height:auto;
-	position:absolute;
-	left:10%;
-	top:163px;
-	font-weight:bold;
-	font-family:Jura;
-	text-align:center;
-	font-size:32px;
-	letter-spacing:0;
-}
-.application-features-dairy__image-position { 
-	width:50%;
-	height:100%;
-	position:absolute;
-	left:25%;
-	top:0px;
-}
-
-.application-features-dairy__image { 
-	height:50%;
-	width:auto;
-	background-image:url(images/dairy.png);
-	background-repeat:no-repeat;
-	background-size:contain;
-}
-.application-features-medicine { 
-	width:25%;
-	height:50%;
-	position:absolute;
-	left:25%;
-	top:1933px;
-}
-.application-features-medicine___image-position { 
-	width:40%;
-	height:100%;
-	position:absolute;
-	left:30%;
-	top:0px;
-}
-.application-features-medicine___image { 
-	height:100%;
-	width:auto;
-	background-image:url(images/medicine.png);
-	background-repeat:no-repeat;
-	background-size:contain;
-}
-.application-features-medicine___text { 
-	color:rgba(15.000000055879354, 169.00000512599945, 88.00000235438347, 1);
-	width:80%;
-	height:auto;
-	position:absolute;
-	left:10%;
-	top:164px;
-	font-weight:bold;
-	font-family:Jura;
-	text-align:center;
-	font-size:32px;
-	letter-spacing:0;
-}
-.application-features-phone { 
-	width:25%;
-	height:50%;
-	position:absolute;
-	left:0%;
-	top:1934px;
-}
-.application-features-phone___image-position { 
-	width:25%;
-	height:100%;
-	position:absolute;
-	left:40%;
-	top:0px;
-}
-.application-features-phone___image { 
-	height:50%;
-	width:auto;
-	background-image:url(images/phone.png);
-	background-repeat:no-repeat;
-	background-size:contain;
-}
-.application-features-phone___text { 
-	color:rgba(15.000000055879354, 169.00000512599945, 88.00000235438347, 1);
-	width:80%;
-	height:auto;
-	position:absolute;
-	left:10%;
-	top:163px;
-	font-weight:bold;
-	font-family:Jura;
-	text-align:center;
+	text-align:left;
 	font-size:32px;
 	letter-spacing:0;
 }
 .about-us { 
+	display: block;
 	width:100%;
 	height:100%;
-	position:absolute;
-	left:0px;
-	top:1284px;
-}
-.about-us__image-position { 
-	width:50%;
-	height:100%;
-	position:absolute;
-	left:60%;
-	top:20%;
+	margin-top: 30px;
 }
 .about-us__image { 
 	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
-	width:75%;
-	height:50%;
-	background-image:url(images/rectangle_1.png);
-	background-repeat:no-repeat;
-	background-size:cover;
+	width:40%;
+	height:auto;
+	margin-left: 2.5%;
+	margin-top: 20px;
+}
+.about-us__text-position {
+	width:50%;
+	height:auto;
+	margin-top: 10px;
+	margin-left: 2.5%;
+	float: left;
 }
 .about-us__text { 
 	color:rgba(0, 0, 0, 1);
-	width:50%;
-	height:auto;
-	position:absolute;
-	left:5%;
-	top:138px;
+	width:100%;
 	font-family:Jura;
 	text-align:left;
 	font-size:26px;
@@ -203,50 +81,37 @@
 }
 .about-us__line {
 	background-color:rgb(193, 193, 193);
-	width:30%;
+	margin-top: 10px;
+	margin-left: 5%;
+	margin-right: 5%;
+	width:auto;
 	height:2px;
-	position:absolute;
-	left:20%;
-	top:10%;
 }
 .about-us__header { 
 	color:rgba(15.000000055879354, 169.00000512599945, 88.00000235438347, 1);
-	width:100%;
-	height:100%;
-	position:absolute;
-	left:25%;
-	top:0px;
 	font-weight:bold;
 	font-family:Jura;
-	text-align:left;
+	text-align:center;
 	font-size:48px;
 	letter-spacing:0;
 }
 
 .intro { 
 	width:100%;
-	height:100%;
-	position:absolute;
-	left:0px;
-	top:0px;
+	height:auto;
 }
 .intro__image { 
+	height:auto;
 	width:100%;
-	height:100%;
-	position:absolute;
-	left:0px;
-	top:0px;
-	background-image:url(images/rectangle_3.png);
-	background-repeat:no-repeat;
-	background-size:cover;
+	position: relative;
 }
 .intro__header { 
-	color:rgba(255, 255, 255, 1);
+	color:rgb(255, 255, 255);
 	width:100%;
 	height:100%;
-	position:absolute;
-	left:10%;
-	top:30%;
+	position: absolute;
+	top: 10%;
+	left: 5%;
 	font-weight:bold;
 	font-family:Jura;
 	text-align:left;
@@ -254,12 +119,12 @@
 	letter-spacing:0;
 }
 .intro__text { 
-	color:rgba(255, 255, 255, 1);
+	color:rgb(255, 255, 255);
 	width:100%;
 	height:auto;
-	position:absolute;
-	left:10%;
-	top:65%;
+	position: absolute;
+	top: 50%;
+	left: 5%;
 	font-weight:bold;
 	font-family:Jura;
 	text-align:left;
