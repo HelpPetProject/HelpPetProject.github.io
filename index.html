@@ -1,57 +1,1187 @@
+<!DOCTYPE html> 
 <html lang="en">
-          <head>
-            <meta charset="utf-8">
-            <title>HelpPet</title>
-            <meta name="description" content="Приложение для владельцов животных">
-            <link href="https://fonts.googleapis.com/css?family=Jura&display=swap" rel="stylesheet">
+	<head>
 
-            <link rel="stylesheet" href="styles.css">
-            
-          </head>
-          
-          <body>
-            <div class="intro">
-              <img  class="intro__image" alt="dog" src="images/rectangle_3.png">
-              <span  class="intro__header">HelpPet</span>
-              <span  class="intro__text">Встреча с ветеринаром в один клик!</span>
-            </div>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+		<title>HelpPet</title>
+		
+		<!-- HelpPet -->
+		<link rel="shortcut icon" type="image/x-icon" href="assets/img/helppet.png">
+		
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		
+		<!-- Fontawesome CSS -->
+		<link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
+		<link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
 
-            <div class="about-us">
-              <div  class="about-us__header">О приложении</div>
-              <div  class="about-us__line">
-              </div>
-              <div  class="about-us__text-position">
-                <span  class="about-us__text">Для того, чтобы заботиться о питомце было легче и удобнее, мы предлагаем использовать наше приложение, которое систематизирует информацию о здоровье и документы, а также создаст медкарту питомца. Оно поможет отслеживать важные для вас данные, например рост, вес, даты приемов и многое другое. Также вы можете созвониться с ветеринаром в любое время дня и ночи. В приложении доступна запись на продолжительный прием к вашему любимому специалисту из нужной ветклиники. После любого приема будет написан и добавлен в медкарту комментарий врача, чтобы никакая информация не потерялась.</span>
-              </div>
-              <img  class="about-us__image" alt="cat" src="images/rectangle_1.png">
-            </div>
+		<!-- Owl Carousel CSS -->
+		<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+		
+		<!-- Aos CSS -->
+		<link rel="stylesheet" href="assets/plugins/aos/aos.css">
 
-            <main>
-              <div  class="application-features">
-                <div class="application-features__box">
-                  <img  class="application-features__image" alt="phone" src="images/phone.png">
-                  <span  class="application-features__text">Ветпаспорт и медицинская карта в приложении</span>
-                </div>
+		<!-- Main CSS -->
+		<link rel="stylesheet" href="assets/css/style.css">
+	
+	</head>
+	<body class="body-home-one">
+		<!-- Main Wrapper -->
+		<div class="main-wrapper">
+		
+			<!-- Header -->
+			<header class="header header-one">
+				<div class="header-fixed">
+				<nav class="navbar navbar-expand-lg header-nav">
+					<div class="container">
+						<div class="navbar-header">
+							<a id="mobile_btn" href="javascript:void(0);">
+								<span class="bar-icon">
+									<span></span>
+									<span></span>
+									<span></span>
+								</span>
+							</a>
+							<a href="index.html" class="navbar-brand logo">
+								<img src="assets/img/logo.png" class="img-fluid" alt="Logo">
+							</a>
+						</div>
+						<div class="main-menu-wrapper">
+							<div class="menu-header">
+								<a href="index.html" class="menu-logo">
+									<img src="assets/img/logo.png" class="img-fluid" alt="Logo">
+								</a>
+								<a id="menu_close" class="menu-close" href="javascript:void(0);">
+									<i class="fas fa-times"></i>
+								</a>
+							</div>
+							<ul class="main-nav">
+								<li class="login-link">
+									<a href="later.html">Вход / Регистрация</a>
+								</li>
+							</ul>		 
+						</div>		 
+						<ul class="nav header-navbar-rht">
+							<li class="nav-item">
+								<a class="nav-link" href="later.html">Вход</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link header-login" href="later.html">Регистрация</a>
+							</li>
+						</ul>
+					</div>		
+				</nav>
+				</div>
+			</header>
+			<!-- /Header -->
+			
+			<!-- Home Banner -->
+			<section class="home-slide d-flex align-items-center">
+				<div class="container">
+					<div class="row ">
+						<div class="col-md-6 d-flex align-items-center">
+							<div class="home-slide-face aos" data-aos="fade-up">
+								<div class="home-slide-text ">
+									<a class="btn bg-stop-learn">С заботой о здоровье животных</a>
+									<h1>Встреча с ветеринаром<br>в <span>один клик</span></h1>
+									<p>Запиши своего любимца на прием прямо сейчас</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 d-flex align-items-end">
+							<div class="dog-slide-img aos" data-aos="fade-up">
+								<img src="assets/img/dog.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- /Home Banner -->
+			
+			<!-- Most popular Categories -->
+			<!--<section class="most-popular">
+				<div class="container">
+					<div class="section-header section-head-one text-center aos " data-aos="fade-up">
+						<h2>Most Populer Categories</h2>
+						<p class="sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aenean accumsan bibendum gravida maecenas augue elementum et neque. Suspendisse imperdiet.</p>
+					</div>
+					<div class="popular-categories aos" data-aos="fade-up">
+						<div class="row justify-content-center">
+							<div class="col-lg-4 col-md-6">
+								<a href="search.html">
+									<div class="sub-categories d-flex align-items-center">
+										<div class="categories-img">
+											<img src="assets/img/categories/rec-1.png" alt="">
+										</div>
+										<div class="categories-text ">
+											<h4>Design</h4>
+											<span>Over <b>2,500</b> Courses</span>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<a href="search.html">
+									<div class="sub-categories d-flex align-items-center">
+										<div class="categories-img">
+											<img src="assets/img/categories/rec-2.png" alt="">
+										</div>
+										<div class="categories-text ">
+											<h4>Digital Marketer</h4>
+											<span>Over <b>5,500</b> Courses</span>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<a href="search.html">
+									<div class="sub-categories d-flex align-items-center">
+										<div class="categories-img">
+											<img src="assets/img/categories/rec-3.png" alt="">
+										</div>
+										<div class="categories-text ">
+											<h4>Photography</h4>
+											<span>Over <b>2,540</b> Courses</span>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<a href="search.html">
+									<div class="sub-categories d-flex align-items-center">
+										<div class="categories-img">
+											<img src="assets/img/categories/rec-4.png" alt="">
+										</div>
+										<div class="categories-text ">
+											<h4>IT Security</h4>
+											<span>Over <b>2,750</b> Courses</span>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<a href="search.html">
+									<div class="sub-categories d-flex align-items-center">
+										<div class="categories-img">
+											<img src="assets/img/categories/rec-5.png" alt="">
+										</div>
+										<div class="categories-text ">
+											<h4>Research</h4>
+											<span>Over <b>2,150</b> Courses</span>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<a href="search.html">
+									<div class="sub-categories d-flex align-items-center">
+										<div class="categories-img">
+											<img src="assets/img/categories/rec-6.png" alt="">
+										</div>
+										<div class="categories-text ">
+											<h4>Finance</h4>
+											<span>Over <b>2,840</b> Courses</span>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<a href="search.html">
+									<div class="sub-categories d-flex align-items-center">
+										<div class="categories-img">
+											<img src="assets/img/categories/rec-7.png" alt="">
+										</div>
+										<div class="categories-text ">
+											<h4>Business</h4>
+											<span>Over <b>2,500</b> Courses</span>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<a href="search.html">
+									<div class="sub-categories d-flex align-items-center">
+										<div class="categories-img">
+											<img src="assets/img/categories/rec-8.png" alt="">
+										</div>
+										<div class="categories-text ">
+											<h4>Computer Science</h4>
+											<span>Over <b>5,500</b> Courses</span>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<a href="search.html">
+									<div class="sub-categories d-flex align-items-center">
+										<div class="categories-img">
+											<img src="assets/img/categories/rec-9.png" alt="">
+										</div>
+										<div class="categories-text ">
+											<h4>Maths & logics</h4>
+											<span>Over <b>2,540</b> Courses</span>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="explore-more text-center">
+							<a href="search.html" class="btn bg-explore">Explore More</a>
+						</div>
+					</div>
+				</div>
+			</section>-->
+			<!-- /Most popular Categories -->
+			
+			<!-- Most trending course -->
+			<section class="section trending-courses">
+				<div class="container">
+					<div class="section-header section-head-one text-center aos " data-aos="fade-up">
+						<h2>Наши врачи</h2>
+						<p class="sub-title">Скоро</p>
+					</div>
+					<div class="owl-carousel mentoring-course trending-course owl-theme aos " data-aos="fade-up">
+						<div class="course-box">
+							<div class="product">
+								<div class="product-img">
+									<a href="later.html">
+										<img class="img-fluid" alt="" src="assets/img/course/img-01.jpg" width="600" height="300">
+									</a>
+								</div>
+								<div class="product-content">
+									<h3 class="title"><a href="later.html">Скоро</a></h3>
+									<div class="course-info d-flex align-items-center">
+										<div class="course-price">
+											200₽
+										</div>
+										<div class="course-view">
+											<i class="fas fa-file-alt"></i>
+											<div class="course-point">
+												<span>85</span>
+											</div>
+											<i class="fas fa-user-graduate"></i>
+											<div class="graduate-point">
+												<span>85</span>
+											</div>	
+										</div>
+									</div>
+									<div class="rating rating-star">	
+										<div class="rating-img">
+											<img src="assets/img/user/user.jpg" alt="">
+										</div>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star"></i>
+										<span class="d-inline-block average-rating rate-point ">4.4<span class="rate-star-point">(15)</span></span>
+									</div>
+									<div class="author-join">
+										<a href="later.html" class="btn join-now">Записаться</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="course-box">
+							<div class="product">
+								<div class="product-img">
+									<a href="later.html">
+										<img class="img-fluid" alt="" src="assets/img/course/img-01.jpg" width="600" height="300">
+									</a>
+								</div>
+								<div class="product-content">
+									<h3 class="title"><a href="later.html">Скоро</a></h3>
+									<div class="course-info d-flex align-items-center">
+										<div class="course-price">
+											Бесплатно
+										</div>
+										<div class="course-view">
+											<i class="fas fa-file-alt"></i>
+												<div class="course-point">
+													<span>75</span>
+												</div>
+											<i class="fas fa-user-graduate"></i>
+												<div class="graduate-point">
+													<span>75</span>
+												</div>	
+										</div>
+									</div>
+									<div class="rating rating-star">	
+										<div class="rating-img">
+											<img src="assets/img/user/user.jpg" alt="">
+										</div>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star "></i>
+										<i class="fas fa-star"></i>
+										<span class="d-inline-block average-rating rate-point ">3.3<span class="rate-star-point">(12)</span></span>
+									</div>
+									<div class="author-join">
+										<a href="later.html" class="btn join-now">Записаться</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="course-box">
+							<div class="product">
+								<div class="product-img">
+									<a href="later.html">
+										<img class="img-fluid" alt="" src="assets/img/course/img-01.jpg" width="600" height="300">
+									</a>
+								</div>
+								<div class="product-content">
+									<h3 class="title"><a href="later.html">Скоро</a></h3>
+									<div class="course-info d-flex align-items-center">
+										<div class="course-price">
+											100₽
+										</div>
+										<div class="course-view">
+											<i class="fas fa-file-alt"></i>
+												<div class="course-point">
+													<span>80</span>
+												</div>
+											<i class="fas fa-user-graduate"></i>
+												<div class="graduate-point">
+													<span>80</span>
+												</div>	
+										</div>
+									</div>
+									<div class="rating rating-star">	
+										<div class="rating-img">
+											<img src="assets/img/user/user.jpg" alt="">
+										</div>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star"></i>
+										<span class="d-inline-block average-rating rate-point ">4.3<span class="rate-star-point">(13)</span></span>
+									</div>
+									<div class="author-join">
+										<a href="later.html" class="btn join-now">Записаться</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="course-box">
+							<div class="product">
+								<div class="product-img">
+									<a href="later.html">
+										<img class="img-fluid" alt="" src="assets/img/course/img-01.jpg" width="600" height="300">
+									</a>
+								</div>
+								<div class="product-content">
+									<h3 class="title"><a href="later.html">Скоро</a></h3>
+									<div class="course-info d-flex align-items-center">
+										<div class="course-price">
+											Бесплатно
+										</div>
+										<div class="course-view">
+											<i class="fas fa-file-alt"></i>
+												<div class="course-point">
+													<span>90</span>
+												</div>
+											<i class="fas fa-user-graduate"></i>
+												<div class="graduate-point">
+													<span>90</span>
+												</div>	
+										</div>
+									</div>
+									<div class="rating rating-star">	
+										<div class="rating-img">
+											<img src="assets/img/user/user.jpg" alt="">
+										</div>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star"></i>
+										<span class="d-inline-block average-rating rate-point ">4.5<span class="rate-star-point">(18)</span></span>
+									</div>
+									<div class="author-join">
+										<a href="later.html" class="btn join-now">Записаться</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="course-box">
+							<div class="product">
+								<div class="product-img">
+									<a href="later.html">
+										<img class="img-fluid" alt="" src="assets/img/course/img-01.jpg" width="600" height="300">
+									</a>
+								</div>
+								<div class="product-content">
+									<h3 class="title"><a href="later.html">Скоро</a></h3>
+									<div class="course-info d-flex align-items-center">
+										<div class="course-price">
+											100₽
+										</div>
+										<div class="course-view">
+											<i class="fas fa-file-alt"></i>
+												<div class="course-point">
+													<span>80</span>
+												</div>
+											<i class="fas fa-user-graduate"></i>
+												<div class="graduate-point">
+													<span>80</span>
+												</div>	
+										</div>
+									</div>
+									<div class="rating rating-star">	
+										<div class="rating-img">
+											<img src="assets/img/user/user.jpg" alt="">
+										</div>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star"></i>
+										<span class="d-inline-block average-rating rate-point ">4.3<span class="rate-star-point">(13)</span></span>
+									</div>
+									<div class="author-join">
+										<a href="later.html" class="btn join-now">Записаться</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="course-box">
+							<div class="product">
+								<div class="product-img">
+									<a href="later.html">
+										<img class="img-fluid" alt="" src="assets/img/course/img-01.jpg" width="600" height="300">
+									</a>
+								</div>
+								<div class="product-content">
+									<h3 class="title"><a href="later.html">Скоро</a></h3>
+									<div class="course-info d-flex align-items-center">
+										<div class="course-price">
+											300₽
+										</div>
+										<div class="course-view">
+											<i class="fas fa-file-alt"></i>
+												<div class="course-point">
+													<span>85</span>
+												</div>
+											<i class="fas fa-user-graduate"></i>
+												<div class="graduate-point">
+													<span>85</span>
+												</div>	
+										</div>
+									</div>
+									<div class="rating rating-star">	
+										<div class="rating-img">
+											<img src="assets/img/user/user.jpg" alt="">
+										</div>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star"></i>
+										<span class="d-inline-block average-rating rate-point ">4.4<span class="rate-star-point">(15)</span></span>
+									</div>
+									<div class="author-join">
+										<a href="later.html" class="btn join-now">Записаться</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="course-box">
+							<div class="product">
+								<div class="product-img">
+									<a href="later.html">
+										<img class="img-fluid" alt="" src="assets/img/course/img-01.jpg" width="600" height="300">
+									</a>
+								</div>
+								<div class="product-content">
+									<h3 class="title"><a href="later.html">Скоро</a></h3>
+									<div class="course-info d-flex align-items-center">
+										<div class="course-price">
+											Бесплатно
+										</div>
+										<div class="course-view">
+											<i class="fas fa-file-alt"></i>
+												<div class="course-point">
+													<span>75</span>
+												</div>
+											<i class="fas fa-user-graduate"></i>
+												<div class="graduate-point">
+													<span>75</span>
+												</div>	
+										</div>
+									</div>
+									<div class="rating rating-star">	
+										<div class="rating-img">
+											<img src="assets/img/user/user.jpg" alt="">
+										</div>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star "></i>
+										<i class="fas fa-star"></i>
+										<span class="d-inline-block average-rating rate-point ">3.3<span class="rate-star-point">(12)</span></span>
+									</div>
+									<div class="author-join">
+										<a href="later.html" class="btn join-now">Записаться</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="course-box">
+							<div class="product">
+								<div class="product-img">
+									<a href="later.html">
+										<img class="img-fluid" alt="" src="assets/img/course/img-01.jpg" width="600" height="300">
+									</a>
+								</div>
+								<div class="product-content">
+									<h3 class="title"><a href="later.html">Скоро</a></h3>
+									<div class="course-info d-flex align-items-center">
+										<div class="course-price">
+											200₽
+										</div>
+										<div class="course-view">
+											<i class="fas fa-file-alt"></i>
+												<div class="course-point">
+													<span>85</span>
+												</div>
+											<i class="fas fa-user-graduate"></i>
+												<div class="graduate-point">
+													<span>85</span>
+												</div>	
+										</div>
+									</div>
+									<div class="rating rating-star">	
+										<div class="rating-img">
+											<img src="assets/img/user/user.jpg" alt="">
+										</div>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star"></i>
+										<span class="d-inline-block average-rating rate-point ">4.4<span class="rate-star-point">(15)</span></span>
+									</div>
+									<div class="author-join">
+										<a href="later.html" class="btn join-now">Записаться</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="course-box">
+							<div class="product">
+								<div class="product-img">
+									<a href="later.html">
+										<img class="img-fluid" alt="" src="assets/img/course/img-01.jpg" width="600" height="300">
+									</a>
+								</div>
+								<div class="product-content">
+									<h3 class="title"><a href="later.html">Скоро</a></h3>
+									<div class="course-info d-flex align-items-center">
+										<div class="course-price">
+											Бесплатно
+										</div>
+										<div class="course-view">
+											<i class="fas fa-file-alt"></i>
+												<div class="course-point">
+													<span>90</span>
+												</div>
+											<i class="fas fa-user-graduate"></i>
+												<div class="graduate-point">
+													<span>90</span>
+												</div>	
+										</div>
+									</div>
+									<div class="rating rating-star">	
+										<div class="rating-img">
+											<img src="assets/img/user/user.jpg" alt="">
+										</div>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star"></i>
+										<span class="d-inline-block average-rating rate-point ">4.5<span class="rate-star-point">(18)</span></span>
+									</div>
+									<div class="author-join">
+										<a href="later.html" class="btn join-now">Записаться</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="course-box">
+							<div class="product">
+								<div class="product-img">
+									<a href="later.html">
+										<img class="img-fluid" alt="" src="assets/img/course/img-01.jpg" width="600" height="300">
+									</a>
+								</div>
+								<div class="product-content">
+									<h3 class="title"><a href="later.html">Скоро</a></h3>
+									<div class="course-info d-flex align-items-center">
+										<div class="course-price">
+											200₽
+										</div>
+										<div class="course-view">
+											<i class="fas fa-file-alt"></i>
+												<div class="course-point">
+													<span>75</span>
+												</div>
+											<i class="fas fa-user-graduate"></i>
+												<div class="graduate-point">
+													<span>75</span>
+												</div>	
+										</div>
+									</div>
+									<div class="rating rating-star">	
+										<div class="rating-img">
+											<img src="assets/img/user/user.jpg" alt="">
+										</div>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star "></i>
+										<i class="fas fa-star"></i>
+										<span class="d-inline-block average-rating rate-point ">3.3<span class="rate-star-point">(12)</span></span>
+									</div>
+									<div class="author-join">
+										<a href="later.html" class="btn join-now">Записаться</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="course-box">
+							<div class="product">
+								<div class="product-img">
+									<a href="later.html">
+										<img class="img-fluid" alt="" src="assets/img/course/img-01.jpg" width="600" height="300">
+									</a>
+								</div>
+								<div class="product-content">
+									<h3 class="title"><a href="later.html">Скоро</a></h3>
+									<div class="course-info d-flex align-items-center">
+										<div class="course-price">
+											300₽
+										</div>
+										<div class="course-view">
+											<i class="fas fa-file-alt"></i>
+												<div class="course-point">
+													<span>95</span>
+												</div>
+											<i class="fas fa-user-graduate"></i>
+												<div class="graduate-point">
+													<span>95</span>
+												</div>	
+										</div>
+									</div>
+									<div class="rating rating-star">	
+										<div class="rating-img">
+											<img src="assets/img/user/user.jpg" alt="">
+										</div>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star"></i>
+										<span class="d-inline-block average-rating rate-point ">4.5<span class="rate-star-point">(18)</span></span>
+									</div>
+									<div class="author-join">
+										<a href="later.html" class="btn join-now">Записаться</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="course-box">
+							<div class="product">
+								<div class="product-img">
+									<a href="later.html">
+										<img class="img-fluid" alt="" src="assets/img/course/img-01.jpg" width="600" height="300">
+									</a>
+								</div>
+								<div class="product-content">
+									<h3 class="title"><a href="later.html">Скоро</a></h3>
+									<div class="course-info d-flex align-items-center">
+										<div class="course-price">
+											200₽
+										</div>
+										<div class="course-view">
+											<i class="fas fa-file-alt"></i>
+												<div class="course-point">
+													<span>85</span>
+												</div>
+											<i class="fas fa-user-graduate"></i>
+												<div class="graduate-point">
+													<span>85</span>
+												</div>	
+										</div>
+									</div>
+									<div class="rating rating-star">	
+										<div class="rating-img">
+											<img src="assets/img/user/user.jpg" alt="">
+										</div>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star"></i>
+										<span class="d-inline-block average-rating rate-point ">4.4<span class="rate-star-point">(15)</span></span>
+									</div>
+									<div class="author-join">
+										<a href="later.html" class="btn join-now">Записаться</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="course-box">
+							<div class="product">
+								<div class="product-img">
+									<a href="later.html">
+										<img class="img-fluid" alt="" src="assets/img/course/img-01.jpg" width="600" height="300">
+									</a>
+								</div>
+								<div class="product-content">
+									<h3 class="title"><a href="later.html">Скоро</a></h3>
+									<div class="course-info d-flex align-items-center">
+										<div class="course-price">
+											300₽
+										</div>
+										<div class="course-view">
+											<i class="fas fa-file-alt"></i>
+												<div class="course-point">
+													<span>80</span>
+												</div>
+											<i class="fas fa-user-graduate"></i>
+												<div class="graduate-point">
+													<span>80</span>
+												</div>	
+										</div>
+									</div>
+									<div class="rating rating-star">	
+										<div class="rating-img">
+											<img src="assets/img/user/user.jpg" alt="">
+										</div>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star"></i>
+										<span class="d-inline-block average-rating rate-point ">4.3<span class="rate-star-point">(13)</span></span>
+									</div>
+									<div class="author-join">
+										<a href="later.html" class="btn join-now">Записаться</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--<div class="trend-explore-more text-center aos " data-aos="fade-up">
+							<a href="search.html" class="btn bg-explore">Explore More</a>
+					</div>-->
+				</div>
+			</section>
+			<!-- /Most trending course -->
+			
+			<!-- Featured Instructor -->
+			<section class="featured-instructor">
+				<div class="container">
+					<div class="section-header section-head-one text-center aos " data-aos="fade-up">
+						<h2>Наши клиники</h2>
+						<p class="sub-title">Скоро</p>
+					</div>
+					<div class="featured-instructor-head aos " data-aos="fade-up">
+						<div class="row">
+							<div class="col-lg-3 col-md-6">
+								<div class="large-team">
+									<div class="student-img">
+										<a href="later.html"><img src="assets/img/user/user.jpg" alt=""></a>
+									</div>
+									<div class="view-student">
+										<ul class="view-student-list justify-content-center">
+											<li><i class="fas fa-users"></i></li>
+											<li>50 Врачей</li>
+											<li><i class="fas fa-file-alt"></i></li>
+											<li>85</li>
+										</ul>
+									</div>
+									<div class="team-name text-center">
+										<h4>
+											<a href="later.html">Скоро</a>
+										</h4>
+										<!--<span class="designation">Web Developer</span>-->
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6">
+								<div class="large-team">
+									<div class="student-img">
+										<a href="later.html"><img src="assets/img/user/user.jpg" alt=""></a>
+									</div>
+									<div class="view-student">
+										<ul class="view-student-list justify-content-center">
+											<li><i class="fas fa-users"></i></li>
+											<li>60 Врачей</li>
+											<li><i class="fas fa-file-alt"></i></li>
+											<li>95</li>
+										</ul>
+									</div>
+									<div class="team-name text-center">
+										<h4>
+											<a href="later.html">Скоро</a>
+										</h4>
+										<!--<span class="designation">PHP Expert</span>-->
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6">
+								<div class="large-team">
+									<div class="student-img">
+										<a href="later.html"><img src="assets/img/user/user.jpg" alt=""></a>
+									</div>
+									<div class="view-student">
+										<ul class="view-student-list justify-content-center">
+											<li><i class="fas fa-users"></i></li>
+											<li>45 Врачей</li>
+											<li><i class="fas fa-file-alt"></i></li>
+											<li>75</li>
+										</ul>
+									</div>
+									<div class="team-name text-center">
+										<h4>
+											<a href="later.html">Скоро</a>
+										</h4>
+										<!--<span class="designation">Web Developer</span>-->
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6">
+								<div class="large-team">
+									<div class="student-img">
+										<a href="later.html"><img src="assets/img/user/user.jpg" alt=""></a>
+									</div>
+									<div class="view-student">
+										<ul class="view-student-list justify-content-center">
+											<li><i class="fas fa-users"></i></li>
+											<li>70 Врачей</li>
+											<li><i class="fas fa-file-alt"></i></li>
+											<li>95</li>
+										</ul>
+									</div>
+									<div class="team-name text-center">
+										<h4>
+											<a href="later.html">Скоро</a>
+										</h4>
+										<!--<span class="designation">UI Designer</span>-->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--<div class="become-instructor text-center aos " data-aos="fade-up">
+						<a href="profile.html" class="btn become-instructor-bg">Become an Instructor</a>
+					</div>-->
+				</div>
+			</section>
+			<!-- Featured Instructor -->
+			
+			<!-- join us professional -->
+			<section class="join-mentor">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6  d-flex align-items-end">
+							<div class="join-mentor-img aos " data-aos="fade-up">
+								<img src="assets/img/med.png" alt="">
+							</div>
+						</div>
+						<div class="col-lg-6 ">
+							<div class="head-join-us aos " data-aos="fade-up">
+								<div class="join-mentor-detail">
+									<h2>Хотите помогать животным? Присоединяйтесь к нам как специалист</h2>
+									<p class="join-sub-text">Вместе мы можем сделать больше, принося радость и поддержку в жизни тех, кто не может говорить, но испытывает радость, боль и любовь так же, как и мы. Мы - команда людей, объединенных целью создать лучший мир для животных, а ваши знания и умения могут нам помочь.</p>
+									<div class="find-more ">
+										<a href="later.html" class="btn bg-find">Подробнее</a>
+									</div>
+								</div>
+								<div class="best-course-detail">
+									<h2>У вас есть питомец? Воспользуйтесь нашим сервисом</h2>
+									<p class="join-sub-text">Приложение упрощает ведение медкарты питомца, включая данные о здоровье и документы. Отслеживайте рост, вес, и другие важные показатели, записывайтесь на прием к ветеринару, и получайте комментарии врача прямо в приложении. Также доступен звонок ветеринару в любое время.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- /join us professional -->
+			
+			<!-- Customers say about -->
+			<section class="student-say-about testimonial-section">
+				<div class="container">
+					<div class="section-header section-head-one text-center about-space aos " data-aos="fade-up">
+						<h2>Что о нас говорят клиенты</h2>
+						<!--<p class="sub-title">They are highly qualified and trained in their areas</p>-->
+					</div>
+					<div class="col-lg-12 col-md-12 text-center d-flex justify-content-center">
+						<div id="myCarousel" class="carousel slide student-slide-testimoni aos " data-aos="fade-up" data-bs-interval="5000" data-bs-ride="carousel">
+						    <div class="student-bg-fix">
+								<img src="assets/img/testi-bg-3.png" alt="">
+							</div>
+							<div class="carousel-inner">
+								<div class="carousel-item testi-item say-us active" data-color="#fb9c9a" data-img="img/testimonial/1.png">
+									<div class="student-group">
+										<div class="student-about-img">
+											<img src="assets/img/user/user.jpg" alt="">
+										</div>
+										<h3>Скоро</h3>
+										<!--<span>Lead designer</span>-->
+										<p class="say-text">Скоро мы предоставим вам уникальную возможность узнать мнение других клиентов! Ожидайте обзоры, отзывы и впечатления, чтобы быть в курсе того, что говорят о нас наши пользователи.</p>
+										<div class="rating">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item testi-item say-us" data-color="#fbd39a" data-img="img/testimonial/2.png">
+									<div class="student-group">
+										<div class="student-about-img">
+											<img src="assets/img/user/user.jpg" alt="">
+										</div>
+										<h3>Скоро</h3>
+										<!--<span>Web Developer</span>-->
+										<p class="say-text">Скоро мы предоставим вам уникальную возможность узнать мнение других клиентов! Ожидайте обзоры, отзывы и впечатления, чтобы быть в курсе того, что говорят о нас наши пользователи.</p>
+										<div class="rating">
+											<!--<i class="fa fa-star filled"></i>-->
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item testi-item say-us" data-color="#9ab0fb" data-img="img/testimonial/3.png">
+									<div class="student-group">
+										<div class="student-about-img">
+											<img src="assets/img/user/user.jpg" alt="">
+										</div>
+										<h3>Скоро</h3>
+										<!--<span>UI designer</span>-->
+										<p class="say-text">Скоро мы предоставим вам уникальную возможность узнать мнение других клиентов! Ожидайте обзоры, отзывы и впечатления, чтобы быть в курсе того, что говорят о нас наши пользователи.</p>
+										<div class="rating">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</div>
+									</div>
+								</div>
+						    </div>
+						    <button class="carousel-control-prev student-testimonial-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+								<i class="fa fa-angle-left" aria-hidden="true"></i>
+								<span class="visually-hidden">Previous</span>
+						    </button>
+						    <button class="carousel-control-next student-testimonial-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+								<i class="fa fa-angle-right" aria-hidden="true"></i>
+								<span class="visually-hidden">Next</span>
+						    </button>
+						</div>
+				    </div>
+				</div>
+			</section>
+			<!-- /Customers say about -->
+			
+			<!-- New Course subscribe -->
+			<section class="new-course">
+				<div class="container">
+					<div class="new-course-background">
+						<div class="row">
+							<div class="col-lg-4 col-md-6">
+								<div class="new-course-img aos " data-aos="fade-up">
+									<img src="assets/img/cat.png" alt="new course">
+								</div>
+							</div>
+							<div class="col-lg-8 col-md-6 d-flex align-items-center">
+								<div class="every-new-course aos " data-aos="fade-up">
+									<div class="new-course-text">
+										<h1>Для получения обновлений <br>о приложении</h1>
+										<p class="page-sub-text ">Подпишитесь на наши обновления и первыми узнавайте о новых функциях, эксклюзивных возможностях и специальных предложениях. Будьте в курсе будущих обновлений, делясь своими идеями, и получайте приоритетный доступ к акциям. Присоединяйтесь - вместе мы делаем наше приложение лучше! </p>
+									</div>
+									<div class="course-mail">
+										<form action="#">
+											<div class="input-group mb-3 subscribe-form">
+												<a href="https://forms.gle/mzy2z3ejgSwHVbsg7" class="btn bg-course-subscribe" >
+													Подписаться
+												</a>	 
+											</div>	
+										</form>	
+									</div>
+								</div>	
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- New Course -->
+			
+			<Footer>
+			<footer class="footer footer-one">
+				<!--
+				<!Footer Top>
+				<div class="footer-top aos " data-aos="fade-up">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-3 col-md-6">
+							
+								<!Footer Widget>
+								<div class="footer-widget footer-about">
+									<div class="footer-logo">
+										<img src="assets/img/logo.png" alt="logo">
+									</div>
+									<div class="footer-about-content">
+										<h2 class="footer-title">About Mentoring</h2>
+										<p class="footer-sub-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consequat mauris Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consequat mauris. </p>
+										
+									</div>
+								</div>
+								<!/Footer Widget>
+								
+							</div>
+							
+							<div class="col-lg-3 col-md-6">
+							
+								<!Footer Widget>
+								<div class="footer-widget footer-menu">
+									<h2 class="footer-title">For Mentee</h2>
+									<ul>
+										<li><a href="search.html">Search Mentors</a></li>
+										<li><a href="login.html">Login</a></li>
+										<li><a href="register.html">Register</a></li>
+										<li><a href="booking.html">Booking</a></li>
+										<li><a href="dashboard-mentee.html">Mentee Dashboard</a></li>
+									</ul>
+								</div>
+								<!/Footer Widget>
+								
+							</div>
+							
+							<div class="col-lg-3 col-md-6">
+							
+								<!Footer Widget>
+								<div class="footer-widget footer-menu">
+									<h2 class="footer-title">For Mentors</h2>
+									<ul>
+										<li><a href="appointments.html">Appointments</a></li>
+										<li><a href="chat.html">Chat</a></li>
+										<li><a href="login.html">Login</a></li>
+										<li><a href="register.html">Register</a></li>
+										<li><a href="dashboard.html">Mentor Dashboard</a></li>
+									</ul>
+								</div>
+								<!/Footer Widget>
+								
+							</div>
+							
+							<div class="col-lg-3 col-md-6 ">
+							
+								<! Footer Widget >
+								<div class="footer-widget footer-subscribe bg-subscribe">
+									<h2 class="footer-title">Subscribe</h2>
+									<!Footer Subscribe>
+									<div class="footer-mail">
+										<form action="search.html">
+											<div class="input-group">
+												<input type="text" class="form-control" placeholder="Search">
+												<a href="search.html" class="btn bg-path d-flex align-items-center" >
+													<i class="fa fa-arrow-right" aria-hidden="true"></i>
+												</a> 
+										    </div>
+										</form>
+									</div>
+									<!Footer Subscribe>
+									<p class="subscribe-text">Hello, we are Lift Media. Our goal is to translate the positive effects from revolutionizing how companies engage with their clients & their team. </p>
+								</div>
+								<!/Footer Widget>
+								
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				</Footer Top>
+				-->
+				<!--Footer Bottom-->
+                <div class="footer-bottom ">
+					<div class="container">
+					
+						<!--Copyright-->
+						<div class="copyright-border"></div>
+						<div class="copyright ">
+							<div class="row align-items-center">
+								<div class="col-md-6 ">
+									<div class="copyright-text">
+										<p class="mb-0">&copy; 2023 HelpPet. Все права защищены</p>
+									</div>
+								</div>
+								<div class="col-md-6 ">
+									<div class="term-privacy">
+										<div class="social-icon">
+											<ul class="align-items-center">
+												<li>
+													<a href="javascript:void(0);">Пользовательское соглашение</a>
+												</li>
+												<li>
+													<a href="javascript:void(0);">Политика конфиденциальности</a>
+												</li>
+												<li>
+													<a href="javascript:void(0);">Cookies</a>
+												</li>
+												<!--<li>
+													<a href="#" class="social-icon-space d-flex align-items-center justify-content-center" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+												</li>
+												<li>
+													<a href="#" class="social-icon-space d-flex align-items-center justify-content-center" target="_blank"><i class="fab fa-facebook-f"></i></a>
+												</li>
+												<li>
+													<a href="#" class="social-icon-space d-flex align-items-center justify-content-center" target="_blank"><i class="fab fa-twitter"></i> </a>
+												</li>-->
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--/Copyright-->
+						
+					</div>
+				</div>
+				<!--/Footer Bottom-->
+				
+			</footer>
+			<!--/Footer-->
+		</div>
+		<!-- /Main Wrapper -->
 
-                <div class="application-features__box">
-                  <img  class="application-features__image" alt="medicine" src="images/medicine.png">
-                  <span  class="application-features__text">Консультации врача в любое время дня и ночи</span>
-                </div>
+		
+	  
+		<!-- jQuery -->
+		<script src="assets/js/jquery-3.6.0.min.js"></script>
+		
+		<!-- Bootstrap Core JS -->
+		<script src="assets/js/bootstrap.bundle.min.js"></script>
 
-                <div class="application-features__box">
-                 <img  class="application-features__image" alt="dairy" src="images/dairy.png">
-                  <span  class="application-features__text">График приема таблеток и плановых осмотров в дневнике</span>
-                </div>
-
-                <div class="application-features__box">
-                 <img  class="application-features__image" alt="comment" src="images/comment.png">
-                 <span  class="application-features__text">Комментарии от специалистов о здоровии вашего питомца</span>
-                </div>
-              </div>
-            </main>
-            
-            <div class="registration-button">
-              <a  class="registration-button__rectangle" href="https://forms.gle/mzy2z3ejgSwHVbsg7">Попробуйте прямо сейчас!</a>
-            </div>
-          </body>
-          </html>
+		<!-- Owl Carousel -->
+		<script src="assets/js/owl.carousel.min.js"></script>		
+		
+		<!-- Aos -->
+		<script src="assets/plugins/aos/aos.js"></script>
+		
+		<!-- Custom JS -->
+		<script src="assets/js/script.js"></script>
+		
+	</body>
+</html>
